@@ -3,16 +3,15 @@ Summary:	Perl wrapper which colorizes the output of the gcc/g++ compiler
 Summary(pl):	Program koloruj±cy komunikaty kompilatorów gcc/g++
 Name:		colorgcc
 Version:	1.3.2
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Tools
 Source0:	http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
 # Source0-md5:	7d62f92ab99c8271c79c40a0a470e8f7
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-perl-5.6.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-18
-BuildRequires:	perl >= 5.005_03-14
-BuildRequires:	perl(Term::ANSIColor)
+BuildRequires:	perl-devel >= 1:5.6
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
