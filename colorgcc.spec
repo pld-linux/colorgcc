@@ -38,12 +38,10 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install colorgcc $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf INSTALL ChangeLog CREDITS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz colorgccrc
+%doc INSTALL ChangeLog CREDITS colorgccrc
 %attr(755,root,root) %{_bindir}/colorgcc
