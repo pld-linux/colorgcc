@@ -1,0 +1,33 @@
+diff -urN colorgcc-1.3.2/colorgcc colorgcc-1.3.2.new/colorgcc
+--- colorgcc-1.3.2/colorgcc	Thu Apr 29 19:16:08 1999
++++ colorgcc-1.3.2.new/colorgcc	Sun May  9 22:46:47 1999
+@@ -93,10 +93,10 @@
+ 
+ sub initDefaults
+ {
+-   $compilerPaths{"gcc"} = "/usr/local/bin/gcc";
+-   $compilerPaths{"g++"} = "/usr/local/bin/g++";
++   $compilerPaths{"gcc"} = "/usr/bin/gcc";
++   $compilerPaths{"g++"} = "/usr/bin/g++";
+    $compilerPaths{"cc"}  = "/usr/bin/cc";
+-   $compilerPaths{"c++"} = "/usr/local/bin/c++";
++   $compilerPaths{"c++"} = "/usr/bin/c++";
+ 
+    $nocolor{"dumb"} = "true";
+ 
+diff -urN colorgcc-1.3.2/colorgccrc colorgcc-1.3.2.new/colorgccrc
+--- colorgcc-1.3.2/colorgccrc	Thu Apr 29 19:16:08 1999
++++ colorgcc-1.3.2.new/colorgccrc	Sun May  9 22:45:38 1999
+@@ -22,9 +22,9 @@
+ 
+ # Define the paths to the actual location of the various compilers.
+ # (Currently, colorgcc only understands these: g++ gcc c++ cc)
+-g++: /usr/local/bin/g++
+-gcc: /usr/local/bin/gcc
+-c++: /usr/local/bin/c++
++g++: /usr/bin/g++
++gcc: /usr/bin/gcc
++c++: /usr/bin/c++
+ cc:  /usr/bin/cc
+ 
+ # Don't do color if our terminal type ($TERM) is one of these.
