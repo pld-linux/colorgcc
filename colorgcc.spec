@@ -7,6 +7,7 @@ Release:	4
 License:	GPL
 Group:		Development/Tools
 Source0:	http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
+# Source0-md5:	7d62f92ab99c8271c79c40a0a470e8f7
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
