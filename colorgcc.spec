@@ -12,7 +12,7 @@ Patch:		colorgcc-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-ANSIColor
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 colorgcc is a perl wrapper that colorizes the output of the gcc/g++ compiler.
