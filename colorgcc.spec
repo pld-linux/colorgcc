@@ -9,7 +9,7 @@ Copyright:	GPL
 Source:		http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
 Patch:		colorgcc-paths.patch
 Requires:	perl-ANSIColor
-BuildRoot:   	/tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 colorgcc is a perl wrapper that colorizes the output 
