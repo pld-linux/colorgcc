@@ -43,8 +43,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc {INSTALL,ChangeLog,CREDITS}.gz colorgccrc
 
 %attr(755,root,root) %{_bindir}/colorgcc
-
-%changelog
-* Sun May  9 1999 Piotr Czerwiñski <pius@pld.org.pl>
-  [1.3.2-1]
-- initial rpm release.
