@@ -11,9 +11,10 @@ Group(pl):	Programowanie/Narzêdzia
 License:	GPL
 Source0:	http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
+Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.005_03-14
-BuildRequires:	perl-ANSIColor
+BuildRequires:	perl(Term::ANSIColor)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,7 +32,8 @@ Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/INSTALL.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
