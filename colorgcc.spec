@@ -18,7 +18,7 @@ BuildRequires:	perl-devel >= 1:5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_libdir	%{_prefix}/%{_lib}/%{name}
+%define		_libdir		%{_prefix}/%{_lib}/%{name}
 
 %description
 colorgcc is a Perl wrapper that colorizes the output of the gcc/g++
@@ -58,7 +58,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir},/etc/profile.d}
 
 install colorgcc $RPM_BUILD_ROOT%{_bindir}
 
-for cc in cc c++ g++ gcc %{__cc} %{__cxx}; do
+for cc in cc c++ g++ gcc %{_target_cpu}-pld-linux-gcc %{_target_cpu}-pld-linux-g++; do
 	ln -s ../../bin/colorgcc $RPM_BUILD_ROOT%{_libdir}/$cc
 done
 
@@ -75,6 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files wrapper
 %defattr(644,root,root,755)
-/etc/profile.d/%{name}.sh
+%attr(755,root,root) /etc/profile.d/%{name}.sh
 %dir %{_libdir}
 %attr(755,root,root) %{_libdir}/*
