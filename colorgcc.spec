@@ -3,7 +3,7 @@ Summary:	perl wrapper which colorizes the output of the gcc/g++ compiler
 Summary(pl):	program koloruj±cy komunikaty kompilatorów gcc/g++
 Name:		colorgcc
 Version:	1.3.2
-Release:	2
+Release:	3
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
 Group(fr):	Development/Outils
@@ -48,6 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {INSTALL,ChangeLog,CREDITS}.gz colorgccrc
-
+%doc *.gz colorgccrc
 %attr(755,root,root) %{_bindir}/colorgcc
