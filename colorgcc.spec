@@ -31,15 +31,21 @@ colorgcc to napisany w Perlu program opakowuj±cy (wrapper), który
 koloruje tekst wypisywany przez kompilatory gcc/g++ podczas
 kompilacji.
 
-Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/%{name}-%{version}/INSTALL .
+Po zainstalowaniu tego pakietu warto przeczytaæ
+%{_defaultdocdir}/%{name}-%{version}/INSTALL .
 
 %package wrapper
 Summary:	Symlinks for c++/cc/g++/gcc
+Summary(pl):	Dowi±zania symboliczne do c++/cc/g++/gcc
 Group:		Development/Tools
 
 %description wrapper
 This package contains the softlinks to colorgcc for each compiler you
 want to colorize.
+
+%description wrapper -l pl
+Ten pakiet zawiera dowi±zania symboliczne do colorgcc dla ka¿dego z
+koloruj±cych kompilatorów.
 
 %prep
 %setup -q
