@@ -5,23 +5,26 @@ Name:		colorgcc
 Version:	1.3.2
 Release:	2
 Group:		Development/Tools
+Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 License:	GPL
-Source:		http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
-Patch:		colorgcc-paths.patch
+Source0:	http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
+Patch0:		colorgcc-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-ANSIColor
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-colorgcc is a perl wrapper that colorizes the output of the gcc/g++ compiler.
+colorgcc is a perl wrapper that colorizes the output of the gcc/g++
+compiler.
 
 Read %{_defaultdocdir}/INSTALL after installing colorgcc.
 
 %description -l pl
 colorgcc to napisany w perlu program opakowuj±cy (wrapper), który
-koloruje tekst wypisywany przez kompilatory gcc/g++ podczas kompilacji.
+koloruje tekst wypisywany przez kompilatory gcc/g++ podczas
+kompilacji.
 
 Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/INSTALL.
 
