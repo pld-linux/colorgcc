@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	perl wrapper which colorizes the output of the gcc/g++ compiler
-Summary(pl):	program koloruj±cy komunikaty kompilatorów gcc/g++
+Summary:	Perl wrapper which colorizes the output of the gcc/g++ compiler
+Summary(pl):	Program koloruj±cy komunikaty kompilatorów gcc/g++
 Name:		colorgcc
 Version:	1.3.2
 Release:	4
@@ -16,17 +16,17 @@ BuildRequires:	perl(Term::ANSIColor)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-colorgcc is a perl wrapper that colorizes the output of the gcc/g++
+colorgcc is a Perl wrapper that colorizes the output of the gcc/g++
 compiler.
 
 Read %{_defaultdocdir}/INSTALL after installing colorgcc.
 
 %description -l pl
-colorgcc to napisany w perlu program opakowuj±cy (wrapper), który
+colorgcc to napisany w Perlu program opakowuj±cy (wrapper), który
 koloruje tekst wypisywany przez kompilatory gcc/g++ podczas
 kompilacji.
 
-Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/INSTALL.
+Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/INSTALL .
 
 %prep
 %setup -q
