@@ -15,13 +15,13 @@ BuildRoot:   	/tmp/%{name}-%{version}-root
 colorgcc is a perl wrapper that colorizes the output 
 of the gcc/g++ compiler.
 
-Read /usr/share/doc/INSTALL after installing colorgcc.
+Read %{_defaultdocdir}/INSTALL after installing colorgcc.
 
 %description -l pl
 colorgcc to napisany w perlu program opakowuj±cy (wrapper), który
 koloruje tekst wypisywany przez kompilatory gcc/g++ podczas kompilacji.
 
-Po zainstalowaniu tego pakietu przeczytaj /usr/share/doc/INSTALL.
+Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/INSTALL.
 
 %prep
 %setup -q
