@@ -29,9 +29,9 @@ Po zainstalowaniu tego pakietu przeczytaj %{_defaultdocdir}/INSTALL.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/bin
+install -d $RPM_BUILD_ROOT%{_bindir}
 
-install colorgcc $RPM_BUILD_ROOT/usr/bin
+install colorgcc $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf INSTALL ChangeLog CREDITS
 
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {INSTALL,ChangeLog,CREDITS}.gz colorgccrc
 
-%attr(755,root,root) /usr/bin/colorgcc
+%attr(755,root,root) %{_bindir}/colorgcc
 
 %changelog
 * Sun May  9 1999 Piotr Czerwiñski <pius@pld.org.pl>
