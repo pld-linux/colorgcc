@@ -45,7 +45,7 @@ want to colorize.
 
 %description wrapper -l pl
 Ten pakiet zawiera dowi±zania symboliczne do colorgcc dla ka¿dego z
-koloruj±cych kompilatorów.
+kolorowanych kompilatorów.
 
 %prep
 %setup -q
