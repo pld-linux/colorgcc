@@ -38,6 +38,7 @@ Po zainstalowaniu tego pakietu warto przeczytaæ
 Summary:	Symlinks for c++/cc/g++/gcc
 Summary(pl):	Dowi±zania symboliczne do c++/cc/g++/gcc
 Group:		Development/Tools
+Requires:	%{name} = %{version}-%{release}
 
 %description wrapper
 This package contains the softlinks to colorgcc for each compiler you
