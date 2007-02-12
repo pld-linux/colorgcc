@@ -4,7 +4,7 @@
 # - better name for subpackage?
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl wrapper which colorizes the output of the gcc/g++ compiler
-Summary(pl.UTF-8):   Program kolorujący komunikaty kompilatorów gcc/g++
+Summary(pl.UTF-8):	Program kolorujący komunikaty kompilatorów gcc/g++
 Name:		colorgcc
 Version:	1.3.2
 Release:	8
@@ -36,7 +36,7 @@ Po zainstalowaniu tego pakietu warto przeczytać
 
 %package wrapper
 Summary:	Symlinks for c++/cc/g++/gcc
-Summary(pl.UTF-8):   Dowiązania symboliczne do c++/cc/g++/gcc
+Summary(pl.UTF-8):	Dowiązania symboliczne do c++/cc/g++/gcc
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 
