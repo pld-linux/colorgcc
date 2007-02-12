@@ -4,7 +4,7 @@
 # - better name for subpackage?
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl wrapper which colorizes the output of the gcc/g++ compiler
-Summary(pl):	Program koloruj±cy komunikaty kompilatorów gcc/g++
+Summary(pl.UTF-8):   Program kolorujÄ…cy komunikaty kompilatorÃ³w gcc/g++
 Name:		colorgcc
 Version:	1.3.2
 Release:	8
@@ -26,17 +26,17 @@ compiler.
 
 Read %{_docdir}/%{name}-%{version}/INSTALL after installing colorgcc.
 
-%description -l pl
-colorgcc to napisany w Perlu program opakowuj±cy (wrapper), który
+%description -l pl.UTF-8
+colorgcc to napisany w Perlu program opakowujÄ…cy (wrapper), ktÃ³ry
 koloruje tekst wypisywany przez kompilatory gcc/g++ podczas
 kompilacji.
 
-Po zainstalowaniu tego pakietu warto przeczytaæ
+Po zainstalowaniu tego pakietu warto przeczytaÄ‡
 %{_docdir}/%{name}-%{version}/INSTALL .
 
 %package wrapper
 Summary:	Symlinks for c++/cc/g++/gcc
-Summary(pl):	Dowi±zania symboliczne do c++/cc/g++/gcc
+Summary(pl.UTF-8):   DowiÄ…zania symboliczne do c++/cc/g++/gcc
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 
@@ -44,9 +44,9 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the softlinks to colorgcc for each compiler you
 want to colorize.
 
-%description wrapper -l pl
-Ten pakiet zawiera dowi±zania symboliczne do colorgcc dla ka¿dego z
-kolorowanych kompilatorów.
+%description wrapper -l pl.UTF-8
+Ten pakiet zawiera dowiÄ…zania symboliczne do colorgcc dla kaÅ¼dego z
+kolorowanych kompilatorÃ³w.
 
 %prep
 %setup -q
