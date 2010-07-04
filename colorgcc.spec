@@ -4,6 +4,7 @@
 # - better name for subpackage?
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl wrapper which colorizes the output of the gcc/g++ compiler
+Summary(hu.UTF-8):	Perl wrapper, amely a gcc/g++ fordítók kimeneteit színezi
 Summary(pl.UTF-8):	Program kolorujący komunikaty kompilatorów gcc/g++
 Name:		colorgcc
 Version:	1.3.2
@@ -12,6 +13,7 @@ License:	GPL
 Group:		Development/Tools
 Source0:	http://home.i1.net/~jamoyers/software/colorgcc/%{name}-%{version}.tar.gz
 # Source0-md5:	7d62f92ab99c8271c79c40a0a470e8f7
+URL:		http://www.schlueters.de/colorgcc.html
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	perl-devel >= 1:5.6
@@ -26,6 +28,13 @@ compiler.
 
 Read %{_docdir}/%{name}-%{version}/INSTALL after installing colorgcc.
 
+%description  -l hu.UTF-8
+colorgcc egy perl wrapper, amely a gcc/g++ fordítók kimeneteit
+színezi.
+
+Olvasd el a %{_docdir}/%{name}-%{version}/INSTALL fájlt a colorgcc
+telepítése után!
+
 %description -l pl.UTF-8
 colorgcc to napisany w Perlu program opakowujący (wrapper), który
 koloruje tekst wypisywany przez kompilatory gcc/g++ podczas
@@ -36,6 +45,7 @@ Po zainstalowaniu tego pakietu warto przeczytać
 
 %package wrapper
 Summary:	Symlinks for c++/cc/g++/gcc
+Summary(hu.UTF-8):	Szimbolikus linkek c++/cc/g++/gcc-hez
 Summary(pl.UTF-8):	Dowiązania symboliczne do c++/cc/g++/gcc
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
@@ -43,6 +53,10 @@ Requires:	%{name} = %{version}-%{release}
 %description wrapper
 This package contains the softlinks to colorgcc for each compiler you
 want to colorize.
+
+%description wrapper -l hu.UTF-8
+Ez a csomag tartalmazza a szimbolikus linkeket a colorgcc-hez minden 
+fordítóhoz, amit színezni akarsz.
 
 %description wrapper -l pl.UTF-8
 Ten pakiet zawiera dowiązania symboliczne do colorgcc dla każdego z
