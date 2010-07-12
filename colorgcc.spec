@@ -26,22 +26,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 colorgcc is a Perl wrapper that colorizes the output of the gcc/g++
 compiler.
 
-Read %{_docdir}/%{name}-%{version}/INSTALL after installing colorgcc.
-
 %description  -l hu.UTF-8
 colorgcc egy perl wrapper, amely a gcc/g++ fordítók kimeneteit
 színezi.
-
-Olvasd el a %{_docdir}/%{name}-%{version}/INSTALL fájlt a colorgcc
-telepítése után!
 
 %description -l pl.UTF-8
 colorgcc to napisany w Perlu program opakowujący (wrapper), który
 koloruje tekst wypisywany przez kompilatory gcc/g++ podczas
 kompilacji.
-
-Po zainstalowaniu tego pakietu warto przeczytać
-%{_docdir}/%{name}-%{version}/INSTALL .
 
 %package wrapper
 Summary:	Symlinks for c++/cc/g++/gcc
@@ -55,7 +47,7 @@ This package contains the softlinks to colorgcc for each compiler you
 want to colorize.
 
 %description wrapper -l hu.UTF-8
-Ez a csomag tartalmazza a szimbolikus linkeket a colorgcc-hez minden 
+Ez a csomag tartalmazza a szimbolikus linkeket a colorgcc-hez minden
 fordítóhoz, amit színezni akarsz.
 
 %description wrapper -l pl.UTF-8
