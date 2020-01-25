@@ -2,7 +2,6 @@
 # - /etc/env.d/PATH does not support "merging",
 #   so therefore we use /etc/profile.d
 # - better name for subpackage?
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl wrapper which colorizes the output of the gcc/g++ compiler
 Summary(hu.UTF-8):	Perl wrapper, amely a gcc/g++ fordítók kimeneteit színezi
 Summary(pl.UTF-8):	Program kolorujący komunikaty kompilatorów gcc/g++
