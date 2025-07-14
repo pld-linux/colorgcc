@@ -55,8 +55,8 @@ kolorowanych kompilatorów.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
